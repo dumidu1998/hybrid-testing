@@ -29,6 +29,9 @@ public class LoginPage extends TestBase {
     @FindBy(xpath = "//div[@class='atLogoImg']")
     WebElement actiTimeLogo;
 
+    @FindBy(xpath = "//*[@id='ErrorsTable']/tbody/tr/td[2]/table/tbody/tr/td/span")
+    WebElement errorMessage;
+
 
     //initialization
     public LoginPage() {
@@ -38,6 +41,10 @@ public class LoginPage extends TestBase {
     //Action/Methods
     public Boolean validateActiTimeLogo() {
         return actiTimeLogo.isDisplayed();
+    }
+
+    public Boolean invalidLoginTextVisible() {
+        return errorMessage.isDisplayed();
     }
 
     public HomePage login(String username, String pwd) {
