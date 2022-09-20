@@ -56,7 +56,7 @@ public class LogonPageTest extends TestBase{
 	public void LoginTest(String userName, String password) {
 		
 		
-		homePage = loginPage.loging(userName, password);
+		homePage = loginPage.login(userName, password);
 	}
 	
 	

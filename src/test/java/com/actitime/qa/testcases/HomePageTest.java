@@ -23,7 +23,7 @@ public class HomePageTest extends TestBase{
 	public void seup() {
 		initialization();
 		loginPage = new LoginPage();
-		homePage = loginPage.loging(properties.getProperty("username"), properties.getProperty("password"));
+		homePage = loginPage.login(properties.getProperty("username"), properties.getProperty("password"));
 		
 		
 	}
