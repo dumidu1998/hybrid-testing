@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Arrays;
 
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -66,8 +67,6 @@ public class TestUtil extends TestBase {
 			}
 		}
 		return data;
-		
-
 	}
 	
 	
