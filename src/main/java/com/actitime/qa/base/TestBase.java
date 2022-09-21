@@ -40,10 +40,10 @@ public class TestBase {
         String browserName = properties.getProperty("browser");
 
         if (browserName.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "C:\\ASQA\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\chromedriver.exe");
             driver = new ChromeDriver();
         } else if (browserName.equals("Firefox")) {
-            //System.setProperty("webdriver.gecko.driver", "C:\ASQA\chromedriver.exe");
+            //System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\gecoDriver.exe");
             driver = new FirefoxDriver();
         } else if (browserName.equals("IE")) {
             //code for IE Driver
