@@ -10,8 +10,12 @@
 
    <test name = "Test Automation - Actitime">
       <classes>
+         <class name = "com.actitime.qa.testcases.LoginPageTest" />
          <class name = "com.actitime.qa.testcases.HomePageTest" />
-         <class name = "com.actitime.qa.testcases.LogonPageTest" />
+         <class name = "com.actitime.qa.testcases.ViewEmployeeProfileTest" />
+         <class name = "com.actitime.qa.testcases.ReviewAttendanceTest" />
+         <class name = "com.actitime.qa.testcases.ReviewLeavesTest" />
+         <class name = "com.actitime.qa.testcases.ApproveRejectTimeSheetTest" />
       </classes>
    </test>
 

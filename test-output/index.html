@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Test_Automation_-_Actitime" class="navigator-link">
-              <span class="suite-name border-passed">Test Automation - Actitime</span>
+            <a href="#" panel-name="suite-Default_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Default Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Test_Automation_-_Actitime" class="navigator-link ">
-                    <span>C:\ASQA\Assignment_2\src\main\resources\testng.xml</span>
+                  <a href="#" panel-name="test-xml-Default_Suite" class="navigator-link ">
+                    <span>C:\Users\dumid\AppData\Local\JetBrains\IntelliJIdea2021.3\temp-testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Test_Automation_-_Actitime" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Default_Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Test_Automation_-_Actitime" class="navigator-link ">
+                  <a href="#" panel-name="group-Default_Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Test_Automation_-_Actitime" class="navigator-link ">
+                  <a href="#" panel-name="times-Default_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Test_Automation_-_Actitime" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Default_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Test_Automation_-_Actitime" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Default_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Test_Automation_-_Actitime" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Default_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,41 +91,54 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  1 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods failed suite-Default_Suite"> (hide)</a> <!-- hide-methods failed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods failed suite-Default_Suite"> (show)</a> <!-- show-methods failed suite-Default_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.actitime.qa.testcases.ReviewLeavesTest" class="method navigator-link" hash-for-method="approveLeaveRequests">approveLeaveRequests</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods skipped suite-Default_Suite"> (hide)</a> <!-- hide-methods skipped suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods skipped suite-Default_Suite"> (show)</a> <!-- show-methods skipped suite-Default_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Default_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.actitime.qa.testcases.ReviewLeavesTest" class="method navigator-link" hash-for-method="rejectLeaveRequests">rejectLeaveRequests</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Default_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Test_Automation_-_Actitime" class="hide-methods passed suite-Test_Automation_-_Actitime"> (hide)</a> <!-- hide-methods passed suite-Test_Automation_-_Actitime -->
-                      <a href="#" panel-name="suite-Test_Automation_-_Actitime" class="show-methods passed suite-Test_Automation_-_Actitime"> (show)</a> <!-- show-methods passed suite-Test_Automation_-_Actitime -->
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods passed suite-Default_Suite"> (hide)</a> <!-- hide-methods passed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods passed suite-Default_Suite"> (show)</a> <!-- show-methods passed suite-Default_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Test_Automation_-_Actitime">
+                    <div class="method-list-content passed suite-Default_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Automation_-_Actitime" title="com.actitime.qa.testcases.LogonPageTest" class="method navigator-link" hash-for-method="LoginTest(admin, manager)">LoginTest(admin, manager)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_Suite" title="com.actitime.qa.testcases.ReviewLeavesTest" class="method navigator-link" hash-for-method="leaveManagementPageLoaded">leaveManagementPageLoaded</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Automation_-_Actitime" title="com.actitime.qa.testcases.LogonPageTest" class="method navigator-link" hash-for-method="LoginTest(trainee, trainee)">LoginTest(trainee, trainee)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_Suite" title="com.actitime.qa.testcases.ReviewLeavesTest" class="method navigator-link" hash-for-method="leaveRequestPageLoaded">leaveRequestPageLoaded</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Automation_-_Actitime" title="com.actitime.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="homePageLogoTest">homePageLogoTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Automation_-_Actitime" title="com.actitime.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="homePageTaskLinkTest">homePageTaskLinkTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Automation_-_Actitime" title="com.actitime.qa.testcases.LogonPageTest" class="method navigator-link" hash-for-method="loginPageLogoTest">loginPageLogoTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Test_Automation_-_Actitime -->
+                    </div> <!-- method-list-content passed suite-Default_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -136,237 +149,240 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Test_Automation_-_Actitime" class="panel Test_Automation_-_Actitime">
-          <div class="suite-Test_Automation_-_Actitime-class-passed">
+        <div panel-name="suite-Default_Suite" class="panel Default_Suite">
+          <div class="suite-Default_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.actitime.qa.testcases.LogonPageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.actitime.qa.testcases.ReviewLeavesTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginTest(admin, manager)">
-                  </a> <!-- LoginTest(admin, manager) -->
-                  <span class="method-name">LoginTest</span>
-                  <span class="parameters">(admin, manager)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginTest(trainee, trainee)">
-                  </a> <!-- LoginTest(trainee, trainee) -->
-                  <span class="method-name">LoginTest</span>
-                  <span class="parameters">(trainee, trainee)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginPageLogoTest">
-                  </a> <!-- loginPageLogoTest -->
-                  <span class="method-name">loginPageLogoTest</span>
+                  <a name="approveLeaveRequests">
+                  </a> <!-- approveLeaveRequests -->
+                  <span class="method-name">approveLeaveRequests</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Approved] but found [Waiting for Approval]
+	at com.actitime.qa.pages.LeaveRequestPage.approveSelected(LeaveRequestPage.java:74)
+	at com.actitime.qa.testcases.ReviewLeavesTest.approveLeaveRequests(ReviewLeavesTest.java:51)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Automation_-_Actitime-class-passed -->
-          <div class="suite-Test_Automation_-_Actitime-class-passed">
+          </div> <!-- suite-Default_Suite-class-failed -->
+          <div class="suite-Default_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.actitime.qa.testcases.HomePageTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.actitime.qa.testcases.ReviewLeavesTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="homePageLogoTest">
-                  </a> <!-- homePageLogoTest -->
-                  <span class="method-name">homePageLogoTest</span>
+                  <a name="rejectLeaveRequests">
+                  </a> <!-- rejectLeaveRequests -->
+                  <span class="method-name">rejectLeaveRequests</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;https://demo.actiplans.com/switcher.do?urlSwitchedFrom=%2Fuser%2Fsubmit_tt.do%3Fsubmitted%3D&quot; class=&quot;productSwitcher&quot;&gt;...&lt;/a&gt; is not clickable at point (288, 35). Other element would receive the click: &lt;div id=&quot;preInsertedTransformedMoireId&quot; class=&quot;transformedMoireClass&quot; style=&quot;transition: opacity 600ms ease-in-out 0s; opacity: 0;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=105.0.5195.125)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-L2OLV82D&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\dumid\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:11764}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ab29cb9f3eb5b425595cc805e46b73a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.actitime.qa.pages.HomePage.clickOnSwitchToActiPlans(HomePage.java:68)
+	at com.actitime.qa.testcases.ReviewLeavesTest.setup(ReviewLeavesTest.java:29)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-skipped -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.actitime.qa.testcases.ReviewLeavesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="leaveManagementPageLoaded">
+                  </a> <!-- leaveManagementPageLoaded -->
+                  <span class="method-name">leaveManagementPageLoaded</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="homePageTaskLinkTest">
-                  </a> <!-- homePageTaskLinkTest -->
-                  <span class="method-name">homePageTaskLinkTest</span>
+                  <a name="leaveRequestPageLoaded">
+                  </a> <!-- leaveRequestPageLoaded -->
+                  <span class="method-name">leaveRequestPageLoaded</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Automation_-_Actitime-class-passed -->
-        </div> <!-- panel Test_Automation_-_Actitime -->
-        <div panel-name="test-xml-Test_Automation_-_Actitime" class="panel">
+          </div> <!-- suite-Default_Suite-class-passed -->
+        </div> <!-- panel Default_Suite -->
+        <div panel-name="test-xml-Default_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\ASQA\Assignment_2\src\main\resources\testng.xml</span>
+            <span class="header-content">C:\Users\dumid\AppData\Local\JetBrains\IntelliJIdea2021.3\temp-testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Test Automation - Actitime&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.actitime.qa.extentreportlistener.ExtentReporterNG&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test Automation - Actitime&quot;&gt;
+&lt;suite name=&quot;Default Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Assignment_2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.actitime.qa.testcases.HomePageTest&quot;/&gt;
-      &lt;class name=&quot;com.actitime.qa.testcases.LogonPageTest&quot;/&gt;
+      &lt;class name=&quot;com.actitime.qa.testcases.ReviewLeavesTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test Automation - Actitime --&gt;
-&lt;/suite&gt; &lt;!-- Test Automation - Actitime --&gt;
+  &lt;/test&gt; &lt;!-- Assignment_2 --&gt;
+&lt;/suite&gt; &lt;!-- Default Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Test_Automation_-_Actitime" class="panel">
+        <div panel-name="testlist-Default_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Test Automation - Actitime</span>
+            <span class="header-content">Tests for Default Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test Automation - Actitime (2 classes)</span>
+                <span class="test-name">Assignment_2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Test_Automation_-_Actitime" class="panel">
+        <div panel-name="group-Default_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Test Automation - Actitime</span>
+            <span class="header-content">Groups for Default Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Test_Automation_-_Actitime" class="panel">
+        <div panel-name="times-Default_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Test Automation - Actitime</span>
+            <span class="header-content">Times for Default Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Test_Automation_-_Actitime');
-function tableData_Test_Automation_-_Actitime() {
+suiteTableInitFunctions.push('tableData_Default_Suite');
+function tableData_Default_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'homePageTaskLinkTest')
-data.setCell(0, 2, 'com.actitime.qa.testcases.HomePageTest')
-data.setCell(0, 3, 5041);
+data.setCell(0, 1, 'approveLeaveRequests')
+data.setCell(0, 2, 'com.actitime.qa.testcases.ReviewLeavesTest')
+data.setCell(0, 3, 6133);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'homePageLogoTest')
-data.setCell(1, 2, 'com.actitime.qa.testcases.HomePageTest')
-data.setCell(1, 3, 3403);
+data.setCell(1, 1, 'leaveRequestPageLoaded')
+data.setCell(1, 2, 'com.actitime.qa.testcases.ReviewLeavesTest')
+data.setCell(1, 3, 1061);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'LoginTest')
-data.setCell(2, 2, 'com.actitime.qa.testcases.LogonPageTest')
-data.setCell(2, 3, 230);
+data.setCell(2, 1, 'leaveManagementPageLoaded')
+data.setCell(2, 2, 'com.actitime.qa.testcases.ReviewLeavesTest')
+data.setCell(2, 3, 80);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'LoginTest')
-data.setCell(3, 2, 'com.actitime.qa.testcases.LogonPageTest')
-data.setCell(3, 3, 196);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginPageLogoTest')
-data.setCell(4, 2, 'com.actitime.qa.testcases.LogonPageTest')
-data.setCell(4, 3, 37);
-window.suiteTableData['Test_Automation_-_Actitime']= { tableData: data, tableDiv: 'times-div-Test_Automation_-_Actitime'}
+data.setCell(3, 1, 'rejectLeaveRequests')
+data.setCell(3, 2, 'com.actitime.qa.testcases.ReviewLeavesTest')
+data.setCell(3, 3, 0);
+window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
-              <div id="times-div-Test_Automation_-_Actitime">
-              </div> <!-- times-div-Test_Automation_-_Actitime -->
+              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <div id="times-div-Default_Suite">
+              </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Test_Automation_-_Actitime" class="panel">
+        <div panel-name="reporter-Default_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Test Automation - Actitime</span>
+            <span class="header-content">Reporter output for Default Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Test_Automation_-_Actitime" class="panel">
+        <div panel-name="ignored-methods-Default_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Test_Automation_-_Actitime" class="panel">
+        <div panel-name="chronological-Default_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.actitime.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.actitime.qa.testcases.ReviewLeavesTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">rejectLeaveRequests</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method before">
-                <span class="method-name">seup</span>
+                <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">homePageLogoTest</span>
-                <span class="method-start">6266 ms</span>
+                <span class="method-name">leaveManagementPageLoaded</span>
+                <span class="method-start">67632 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9669 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.actitime.qa.testcases.LogonPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">seup</span>
-                <span class="method-start">9884 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginPageLogoTest</span>
-                <span class="method-start">16643 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">16680 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.actitime.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">seup</span>
-                <span class="method-start">16800 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">homePageTaskLinkTest</span>
-                <span class="method-start">23168 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">28209 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.actitime.qa.testcases.LogonPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">seup</span>
-                <span class="method-start">28881 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">LoginTest(admin, manager)</span>
-                <span class="method-start">34717 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">34947 ms</span>
+                <span class="method-start">67712 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">seup</span>
-                <span class="method-start">35091 ms</span>
+                <span class="method-name">setup</span>
+                <span class="method-start">67979 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">LoginTest(trainee, trainee)</span>
-                <span class="method-start">40787 ms</span>
+                <span class="method-name">leaveRequestPageLoaded</span>
+                <span class="method-start">134614 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">40984 ms</span>
+                <span class="method-start">135675 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">135898 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">approveLeaveRequests</span>
+                <span class="method-start">202012 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">208193 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup</span>
+                <span class="method-start">208470 ms</span>
+              </div> <!-- configuration-method before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
