@@ -13,27 +13,6 @@ jobs:
           uses: actions/setup-java@v1
           with:
             java-version: 11
-            
-        - name: zipping
-          uses: vimtor/action-zip@v1
-          with:
-            files: target/surefire-reports
-            dest: result.zip
-
-        - name: ✨ Send email,
-          if: always()
-          uses: dawidd6/action-send-mail@v3
-          with:
-            server_address: smtp.gmail.com
-            server_port: 465
-            username: ${{ secrets.GMAIL_ADDRESS }}
-            password: ${{ secrets.GMAIL_PASS }}
-            subject: Your a star ✨
-            body: Test Executed on ${{ github.repository }}!
-            to: ${{ secrets.GMAIL_ADDRESS_RECEIVER }}
-            from: ${{ secrets.GMAIL_ADDRESS }}
-            attachments: test-output/Extent.html,result.zip
-
         - name:  Install Google Chrome # Using shell script to install Google Chrome
           run:   |
                   chmod +x ./scripts/InstallChrome.sh
@@ -69,7 +48,7 @@ jobs:
             files: target/surefire-reports
             dest: result.zip
 
-        - name: ✨ Send email,
+        - name: ✨ Send email
           if: always()
           uses: dawidd6/action-send-mail@v3
           with:
@@ -81,4 +60,18 @@ jobs:
             body: Test Executed on ${{ github.repository }}!
             to: ${{ secrets.GMAIL_ADDRESS_RECEIVER }}
             from: ${{ secrets.GMAIL_ADDRESS }}
-            attachments: test-output/Extent.html,result.zip
+            attachments: test-output/Extent.html
+
+        - name: ✨ Send email with attachment
+          if: always()
+          uses: dawidd6/action-send-mail@v3
+          with:
+            server_address: smtp.gmail.com
+            server_port: 465
+            username: ${{ secrets.GMAIL_ADDRESS }}
+            password: ${{ secrets.GMAIL_PASS }}
+            subject: Your a star ✨
+            body: Test Executed on ${{ github.repository }}!
+            to: ${{ secrets.GMAIL_ADDRESS_RECEIVER }}
+            from: ${{ secrets.GMAIL_ADDRESS }}
+            attachments: result.zip
