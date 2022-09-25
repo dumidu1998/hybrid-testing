@@ -1,14 +1,14 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name = "Test Automation - Actitime">
+<suite name = "Test Automation - Actitime" >
 
 
 <listeners>
 		<listener class-name="com.actitime.qa.extentreportlistener.ExtentReporterNG" />
 	</listeners>
 
-   <test name = "Test Automation - Actitime">
+   <test name = "Test Automation - Actitime" preserve-order="true" thread-count="20">
       <classes>
          <class name = "com.actitime.qa.testcases.LoginPageTest" />
          <class name = "com.actitime.qa.testcases.HomePageTest" />

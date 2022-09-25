@@ -36,14 +36,14 @@ public class ReviewLeavesTest extends TestBase {
         leaveManagementPage.verifyLeaveManagementPageLoaded();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 1)
     public void leaveRequestPageLoaded() {
         leaveRequestPage = leaveManagementPage.clickLeaveRequestLink();
         leaveRequestPage.verifyPageTitle();
         leaveRequestPage.verifyRequestTableLoaded();
     }
 
-    @Test(priority = 3)
+    @Test(priority = 1)
     public void approveLeaveRequests() throws InterruptedException, IOException {
         leaveRequestPage = leaveManagementPage.clickLeaveRequestLink();
         leaveRequestPage.filterByStatus("Waiting for Approval");
@@ -52,7 +52,7 @@ public class ReviewLeavesTest extends TestBase {
         TestUtil.takeScreenshot();
     }
 
-    @Test(priority = 4)
+    @Test(priority = 1)
     public void rejectLeaveRequests() throws InterruptedException, IOException {
         leaveRequestPage = leaveManagementPage.clickLeaveRequestLink();
         leaveRequestPage.filterByStatus("Waiting for Approval");

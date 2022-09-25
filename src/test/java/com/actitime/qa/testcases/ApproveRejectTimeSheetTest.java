@@ -33,14 +33,14 @@ public class ApproveRejectTimeSheetTest extends TestBase {
         approveTimeSheetPage.verifyPageLoaded();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 1)
     public void approveTimeTrack() throws InterruptedException {
         approveTimeSheetPage.viewPendingTimeSheets();
         approveTimeSheetPage.selectFirstTimeSheet();
         approveTimeSheetPage.approveSelected();
     }
 
-    @Test(priority = 3)
+    @Test(priority = 1)
     public void rejectTimeTrack() throws InterruptedException {
         approveTimeSheetPage.viewPendingTimeSheets();
         approveTimeSheetPage.selectFirstTimeSheet();

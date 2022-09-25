@@ -4,6 +4,7 @@ import com.actitime.qa.util.TestUtil;
 import com.actitime.qa.util.WebEventListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
@@ -40,7 +41,7 @@ public class TestBase {
         String browserName = properties.getProperty("browser");
 
         if (browserName.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver.exe");
             driver = new ChromeDriver();
         } else if (browserName.equals("Firefox")) {
             //System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\gecoDriver.exe");

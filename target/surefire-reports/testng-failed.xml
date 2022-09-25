@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="com.actitime.qa.testcases.ReviewLeavesTest">
+        <methods>
+          <include name="setup"/>
+          <include name="rejectLeaveRequests"/>
+          <include name="tearDown"/>
+          <include name="approveLeaveRequests"/>
+        </methods>
+      </class> <!-- com.actitime.qa.testcases.ReviewLeavesTest -->
+      <class name="com.actitime.qa.testcases.ApproveRejectTimeSheetTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="rejectTimeTrack"/>
+        </methods>
+      </class> <!-- com.actitime.qa.testcases.ApproveRejectTimeSheetTest -->
+      <class name="com.actitime.qa.testcases.ReviewAttendanceTest">
+        <methods>
+          <include name="viewTimeTrackOfaUser"/>
+          <include name="viewTimeTrackPageLoaded"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.actitime.qa.testcases.ReviewAttendanceTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

@@ -33,7 +33,7 @@ public class ReviewAttendanceTest extends TestBase {
         viewTimeTrackPage.verifyPageTitle();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 1)
     public void viewTimeTrackOfaUser() throws InterruptedException {
         viewTimeTrackPage.selectRandomUser();
     }
