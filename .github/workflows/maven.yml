@@ -19,3 +19,10 @@ jobs:
                               ./scripts/InstallChrome.sh 
         - name: Build with Maven
           run: mvn clean install test --file pom.xml
+          
+        - name: Archive output artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-without-markdown
+          path: |
+            test-output/*
