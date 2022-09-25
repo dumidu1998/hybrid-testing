@@ -34,3 +34,10 @@ jobs:
           with:
             name: test-report
             path: test-output/Extent.html
+
+        - name: Archive test results2
+          if: always()
+          uses: actions/upload-artifact@v3
+          with:
+            name: test-report-sure-fire
+            path: target/surefire-reports
