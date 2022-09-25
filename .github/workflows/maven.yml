@@ -52,6 +52,6 @@ jobs:
             password: ${{ secrets.GMAIL_PASS }}
             subject: Your a star ✨
             body: Test Executed on ${{ github.repository }}!
-            to: dumiduraj@gmail.com
+            to: ${{ secrets.GMAIL_ADDRESS_RECEIVER }}
             from: ${{ secrets.GMAIL_ADDRESS }}
-            attachments: test-output/Extent.html
+            attachments: ./test-output/Extent.html
