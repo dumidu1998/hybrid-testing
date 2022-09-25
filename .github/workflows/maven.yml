@@ -41,3 +41,15 @@ jobs:
           with:
             name: test-report-sure-fire
             path: target/surefire-reports
+
+        - name: ✨ Send email,
+          uses: dawidd6/action-send-mail@v1.3.0
+          with:
+            server_address: smtp.gmail.com
+            server_port: 465
+            username: ${{ secrets.GMAIL_ADDRESS }}
+            password: ${{ secrets.GMAIL_PASS }}
+            subject: Your a star ✨
+            body: just starred your mail-on-star repo!!! ${{ github.repository }}
+            to: dumiduraj@gmail.com
+            from: ${{ secrets.GMAIL_ADDRESS }}
