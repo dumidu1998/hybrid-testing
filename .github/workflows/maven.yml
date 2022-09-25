@@ -44,7 +44,7 @@ jobs:
 
         - name: ✨ Send email,
           if: always()
-          uses: dawidd6/action-send-mail@v1.3.0
+          uses: dawidd6/action-send-mail@v3
           with:
             server_address: smtp.gmail.com
             server_port: 465
@@ -54,4 +54,4 @@ jobs:
             body: Test Executed on ${{ github.repository }}!
             to: ${{ secrets.GMAIL_ADDRESS_RECEIVER }}
             from: ${{ secrets.GMAIL_ADDRESS }}
-            attachments: ./test-output/Extent.html
+            attachments: ./test-output/Extent.html,test-output/Extent.html
