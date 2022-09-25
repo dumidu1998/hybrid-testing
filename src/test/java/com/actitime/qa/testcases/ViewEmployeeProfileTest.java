@@ -32,7 +32,7 @@ public class ViewEmployeeProfileTest extends TestBase {
         usersPage.verifyUserPageHeading();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 1)
     public void ClickOnUser() {
         usersPage = usersPage.clickOnFirstUser();
         usersPage.verifyAccountInformationHeadingIsVisible();

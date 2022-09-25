@@ -4,6 +4,7 @@ import com.actitime.qa.util.TestUtil;
 import com.actitime.qa.util.WebEventListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
@@ -42,7 +43,6 @@ public class TestBase {
         String browserName = properties.getProperty("browser");
 
         if (browserName.equals("chrome")) {
-            // System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\chromedriver.exe");
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--no-sandbox");

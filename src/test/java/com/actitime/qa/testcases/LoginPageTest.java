@@ -42,14 +42,14 @@ public class LoginPageTest extends TestBase {
         return data;
     }
 
-    @Test(priority = 2, dataProvider = "getActiTimeTestData")
+    @Test(priority = 1, dataProvider = "getActiTimeTestData")
     public void LoginTest(String userName, String password) {
         homePage = loginPage.login(userName, password);
         homePage.validateActiTimeLogo();
         homePage.verifyHomePageTitle();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 1)
     public void invalidLogin(){
         loginPage.login("test", "test");
         loginPage.invalidLoginTextVisible();

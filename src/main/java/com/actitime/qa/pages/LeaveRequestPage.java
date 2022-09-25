@@ -68,7 +68,7 @@ public class LeaveRequestPage extends TestBase {
 
     public void approveSelected(int n) throws InterruptedException {
         approveBtn.click();
-        Thread.sleep(5000);
+        Thread.sleep(7000);
         List<WebElement> statusList = driver.findElements(By.className("statusText"));
         for(int i=0; i<n; i++){
             Assert.assertEquals(statusList.get(i).getText(),"Approved");

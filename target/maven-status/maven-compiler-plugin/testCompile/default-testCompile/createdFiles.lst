@@ -1,0 +1,6 @@
+com\actitime\qa\testcases\ApproveRejectTimeSheetTest.class
+com\actitime\qa\testcases\LoginPageTest.class
+com\actitime\qa\testcases\ReviewAttendanceTest.class
+com\actitime\qa\testcases\ReviewLeavesTest.class
+com\actitime\qa\testcases\HomePageTest.class
+com\actitime\qa\testcases\ViewEmployeeProfileTest.class
