@@ -12,6 +12,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class TestBase {
 
@@ -40,8 +42,13 @@ public class TestBase {
         String browserName = properties.getProperty("browser");
 
         if (browserName.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\chromedriver.exe");
-            driver = new ChromeDriver();
+            // System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\chromedriver.exe");
+            WebDriverManager.chromedriver().setup();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--headless");
+            driver = new ChromeDriver(options);
         } else if (browserName.equals("Firefox")) {
             //System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\gecoDriver.exe");
             driver = new FirefoxDriver();
