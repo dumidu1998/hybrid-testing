@@ -54,3 +54,4 @@ jobs:
             body: just starred your mail-on-star repo!!! ${{ github.repository }}
             to: dumiduraj@gmail.com
             from: ${{ secrets.GMAIL_ADDRESS }}
+            attachments: test-output/Extent.html
