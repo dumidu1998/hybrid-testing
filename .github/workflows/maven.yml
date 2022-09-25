@@ -26,3 +26,8 @@ jobs:
           name: dist-without-markdown
           path: |
             test-output/*
+        - name: Archive test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-report
+          path: test-output/Extent.html
