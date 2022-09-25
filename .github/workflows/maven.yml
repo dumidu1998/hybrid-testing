@@ -21,12 +21,15 @@ jobs:
           run: mvn clean install test --file pom.xml
           
         - name: Archive output artifacts
+          if: always()
           uses: actions/upload-artifact@v3
           with:
             name: dist-without-markdown
             path: |
               test-output/*
+
         - name: Archive test results
+          if: always()
           uses: actions/upload-artifact@v3
           with:
             name: test-report
