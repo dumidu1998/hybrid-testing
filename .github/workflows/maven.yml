@@ -51,7 +51,7 @@ jobs:
             username: ${{ secrets.GMAIL_ADDRESS }}
             password: ${{ secrets.GMAIL_PASS }}
             subject: Your a star ✨
-            body: just starred your mail-on-star repo!!! ${{ github.repository }}
+            body: Test Executed on ${{ github.repository }}!
             to: dumiduraj@gmail.com
             from: ${{ secrets.GMAIL_ADDRESS }}
             attachments: test-output/Extent.html
